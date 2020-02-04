@@ -1,8 +1,4 @@
-import math
-import os
-import sys
-
 import requests
 
-name = input("Your Name? ")
-print("Hello,", name)
+r = requests.get("https://coreyms.com")
+print(r.status_code)
